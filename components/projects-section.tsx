@@ -7,6 +7,14 @@ import Image from "next/image"
 
 const projects = [
   {
+    title: "ATS Score Checker - AI Enabled",
+    description:
+      "AI-powered resume analysis and scoring platform that processes documents in real time to evaluate ATS compatibility, keyword relevance, and structural quality.",
+    image: "/projects/ATS.png",
+    tags: ["Next.js", "Node.js", "AI/ML"],
+    link: "https://www.zeroclipping.com/",
+  },
+  {
     title: "ZeroClipping",
     description:
       "A powerful content scaling platform connecting brands with expert clippers to boost reach through short-form content creation.",

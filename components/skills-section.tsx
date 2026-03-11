@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react"
 const skillCategories = [
   {
     title: "Programming Languages",
-    skills: ["JavaScript", "Python", "PowerShell"],
+    skills: ["JavaScript", "Python", "PowerShell","FASTAPI"],
   },
   {
     title: "Frontend Technologies",
@@ -28,7 +28,7 @@ const skillCategories = [
   },
   {
     title: "Database Technologies",
-    skills: ["MongoDB", "Firebase"],
+    skills: ["MongoDB", "Firebase","VECTOR"],
   },
   {
     title: "State Management",
