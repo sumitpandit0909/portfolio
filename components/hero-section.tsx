@@ -1,12 +1,11 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { use, useEffect, useState } from "react"
 import { Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
-
   useEffect(() => {
     setIsVisible(true)
   }, [])
@@ -37,14 +36,18 @@ export function HeroSection() {
         <div
           className={`flex flex-wrap items-center justify-center gap-4 mb-10 transition-all duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          <Button className="rounded-full gap-2 h-11 px-6 font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25">
-            Get in Touch
+          <Button 
+            asChild
+            className="rounded-full gap-2 h-11 px-6 font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25"
+          >
+            <a href="#contact">Get in Touch</a>
           </Button>
           <Button
+            asChild
             variant="outline"
             className="rounded-full gap-2 h-11 px-6 font-medium bg-transparent border-primary text-primary hover:bg-primary/10 transition-all duration-300 hover:scale-105"
           >
-            View Projects
+            <a href="#projects">View Projects</a>
           </Button>
         </div>
 
@@ -70,7 +73,9 @@ export function HeroSection() {
             <Linkedin size={18} className="text-muted-foreground transition-colors duration-300 hover:text-primary" />
           </a>
           <a
-            href="mailto:its.sumitpandit@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=its.sumitpandit@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center transition-all duration-300 hover:border-primary hover:bg-primary/10 hover:scale-110 hover:-translate-y-1"
             aria-label="Email"
           >

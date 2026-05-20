@@ -53,10 +53,11 @@ export function Navbar() {
 
           <div className="hidden md:block">
             <Button
+              asChild
               size="sm"
               className="rounded-full text-xs h-8 px-4 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25"
             >
-              Hire Me
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=its.sumitpandit@gmail.com" target="_blank" rel="noopener noreferrer">Hire Me</a>
             </Button>
           </div>
 
@@ -82,8 +83,12 @@ export function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <Button size="sm" className="rounded-full mt-2 mx-3">
-                Hire Me
+              <Button 
+                asChild
+                size="sm" 
+                className="rounded-full mt-2 mx-3"
+              >
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=its.sumitpandit@gmail.com" target="_blank" rel="noopener noreferrer">Hire Me</a>
               </Button>
             </div>
           </div>

@@ -7,6 +7,13 @@ import Image from "next/image"
 
 const projects = [
   {
+    title: "Crown Cars",
+    description: "A premium car rental application designed for seamless booking experiences, featuring a modern interface and smooth interactions.",
+    image: "/crowncars.png",
+    tags: ["Astro.js", "React", "Tailwind CSS"],
+    link: "https://bookcrowncars.com/",
+  },
+  {
     title: "ATS Score Checker - AI Enabled",
     description:
       "AI-powered resume analysis and scoring platform that processes documents in real time to evaluate ATS compatibility, keyword relevance, and structural quality.",

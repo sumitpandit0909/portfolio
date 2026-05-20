@@ -35,7 +35,8 @@ export function ContactSection() {
     setIsSubmitting(true)
     setSubmitStatus({ type: null, message: '' })
 
-    const formData = new FormData(e.currentTarget)
+    const form = e.currentTarget
+    const formData = new FormData(form)
     const data = {
       name: formData.get('name') as string,
       email: formData.get('email') as string,
@@ -69,9 +70,7 @@ export function ContactSection() {
         message: result.message || 'Message sent successfully! I\'ll get back to you soon.'
       })
       // Reset form
-      if (e.currentTarget) {
-        e.currentTarget.reset()
-      }
+      form.reset()
     } catch (error) {
       console.error('Form submission error:', error)
       setSubmitStatus({
